@@ -25,17 +25,7 @@ public:
           len++;
       }
       int move=1;
-      if(len%2!=0){
-          go=(len+1)/2;
-          
-          while(move!=go-1){
-              start=start->next;
-              move++;
-              }
-          start->next=start->next->next;
-          return we;
-      }
-      else{
+      
           while(move!=len/2){
               start=start->next;
               move++;
@@ -43,5 +33,5 @@ public:
           start->next=start->next->next;
           return we;
       }
-    }
+    
 };
